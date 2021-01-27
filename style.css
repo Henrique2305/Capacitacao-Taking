@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+}
+.frase {
+    color: darkslategrey;
+}
+
+.checkbox {
+    margin: 20px 0;
+    display: block;
+}
