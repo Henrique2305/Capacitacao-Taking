@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+}
+
+main{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: black;
+	display: block;
+	margin-bottom: .2em;
+}
+
+input {
+	margin: 0 0 20px 0;
+	display: block;
+}
