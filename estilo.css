@@ -1,4 +1,4 @@
-*{
+/* *{
 	box-sizing: border-box;
 }
 
@@ -36,9 +36,9 @@ label{
 	color: black;
 	display: block;
 	margin-bottom: .2em;
-}
+} */
 
-input {
-	margin: 0 0 20px 0;
-	display: block;
+.centralizar {
+	margin: 15px auto;
+	width: 40%;
 }
