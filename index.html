@@ -1,53 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Quiz: Casas de Hogwarts</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>A QUAL CASA DE HOGWARTS VOCÊ PERTENCE?</h1>
 
-        <p class="frase">No seu primeiro ano em Hogwarts, que tipo de aluno você seria?</p>
-        <label class="checkbox">
-            <input type="checkbox" unchecked>Aqule que se juntaria as pessoas mais populares <br>
-            <input type="checkbox" unchecked>Aqule que se juntaria as pessoas que parecem mais inteligentes
-        </label>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz: Casas de Hogwarts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <p class="frase">Por qual motivo você ficaria na detenção em Hogwarts?</p>
-        <label class="checkbox">
-            <input type="checkbox" unchecked>Por bater em um colega para defender um amigo <br>
-            <input type="checkbox" unchecked>Por invadir a Seção Restrita da biblioteca
-        </label>
+<body>
+    <h1 class="titulo">A QUAL CASA DE HOGWARTS VOCÊ PERTENCE?</h1>
 
-        <p class="frase">Um trasgo invadiu a escola e entrou em um dos banheiros. Lá estão dois alunos, uma pessoa que você detesta e uma pessoa que você nunca viu na vida. O que você faz?</p>
-        <label class="checkbox">
-            <input type="checkbox" unchecked>Nada, e torce para que o trasgo ensine uma lição no seu rival <br>
-            <input type="checkbox" unchecked>Invade o banheiro sozinho e tenta deter o trasgo com as armas que você tem
-        </label>
-        
-        <p class="frase">Por último, para qual casa de Hogwarts você NÃO gostaria de ser selecionado?</p>
-        <label class="checkbox">
-            <input type="checkbox" >Sonserina <br>
-            <input type="checkbox" >Grifinória <br>
-            <input type="checkbox" >Lufa-Lufa <br>
-            <input type="checkbox" >Corvinal
-        </label>
+    <p class="frase borda perguntas">No seu primeiro ano em Hogwarts, que tipo de aluno você seria?</p>
 
-        <button type="submit" id="btn-pesquisar" class="btn-button">Done</button>
-        
-        <script>
-             const botao = document.querySelector("#btn-pesquisar");
-             botao.addEventListener("click", infosDoEvento => {
-                fetch(`https://www.potterapi.com/v1/sortinghat`)
-                .then(respostaDoServer => {
-                        return respostaDoServer.json();
-                })
-                .then(dados => {
-                    console.log(dados);
-                    alert("Your House is " + dados)
-                })
-            });
-        </script>
-    </body>
+    <div class="form-check borda">
+        <input class="form-check-input" type="radio" name="pergunta1" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Aqule que se juntaria as pessoas mais populares
+        </label>
+    </div>
+    <div class="form-check borda">
+        <input class="form-check-input" type="radio" name="pergunta1" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Aqule que se juntaria as pessoas que parecem mais inteligentes
+        </label>
+    </div>
+
+    <p class="frase borda perguntas">Por qual motivo você ficaria na detenção em Hogwarts?</p>
+
+    <div class="form-check borda">
+        <input class="form-check-input" type="radio" name="pergunta2" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Por bater em um colega para defender um amigo
+        </label>
+    </div>
+    <div class="form-check borda">
+        <input class="form-check-input" type="radio" name="pergunta2" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Por invadir a Seção Restrita da biblioteca
+        </label>
+    </div>
+
+    <p class="frase borda perguntas">Um trasgo invadiu a escola e entrou em um dos banheiros. Lá estão dois alunos, uma pessoa que você
+        detesta e uma pessoa que você nunca viu na vida. O que você faz?</p>
+
+    <div class="form-check borda">
+        <input class="form-check-input" type="radio" name="pergunta3" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Nada, e torce para que o trasgo ensine uma lição no seu rival
+        </label>
+    </div>
+    <div class="form-check borda">
+        <input class="form-check-input" type="radio" name="pergunta3" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Invade o banheiro sozinho e tenta deter o trasgo com as armas que você tem
+        </label>
+    </div>
+
+    <p class="frase borda perguntas">Por último, para qual casa de Hogwarts você NÃO gostaria de ser selecionado?</p>
+    <label class="checkbox">
+
+        <div class="form-check borda">
+            <input class="form-check-input" type="radio" name="pergunta4" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Sonserina
+            </label>
+        </div>
+        <div class="form-check borda">
+            <input class="form-check-input" type="radio" name="pergunta4" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Grifinória
+            </label>
+        </div>
+        <div class="form-check borda">
+            <input class="form-check-input" type="radio" name="pergunta4" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Lufa-Lufa
+            </label>
+        </div>
+        <div class="form-check borda">
+            <input class="form-check-input" type="radio" name="pergunta4" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Corvinal
+            </label>
+        </div>
+    </label>
+
+    <button type="submit" id="btn-pesquisar" class="btn btn-primary">Submit</button>
+    <!-- <button type="submit" id="btn-pesquisar" class="btn-button">Done</button> -->
+    <script src="scriptHP.js"></script>
+</body>
+
 </html>

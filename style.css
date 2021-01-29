@@ -2,10 +2,23 @@ h1 {
     text-align: center;
 }
 .frase {
-   color: darkslategrey;
+    color: darkslategrey;
 }
 
-.checkbox {
-   margin: 20px 0;
-   display: block;
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.borda {
+    margin-left: 20px;
+}
+
+.perguntas {
+    margin-top: 2em;
+}
+
+.btn {
+    margin: 90px 0 0 10px;
 }
