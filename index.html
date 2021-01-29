@@ -35,6 +35,7 @@
         </label>
 
         <button type="submit" id="btn-pesquisar" class="btn-button">Done</button>
+        
         <script>
              const botao = document.querySelector("#btn-pesquisar");
              botao.addEventListener("click", infosDoEvento => {
@@ -44,15 +45,9 @@
                 })
                 .then(dados => {
                     console.log(dados);
-                    pulaLinha();
-                    document.write("<h1><center>Your house is "+ dados + "!</center></h1>");
+                    alert("Your House is " + dados)
                 })
             });
-
-            function pulaLinha() {
-                document.write("<br><br><br><br><br><br><br><br>")
-            }
         </script>
-        Comentário de teste
     </body>
 </html>
