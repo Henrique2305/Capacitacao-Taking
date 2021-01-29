@@ -6,6 +6,6 @@ botao.addEventListener("click", infosDoEvento => {
         })
         .then(dados => {
             console.log(dados);
-            document.write("<h1><center>Your house is " + dados + "!</center></h1>");
+            alert("Your house is " + dados)
         })
 });
