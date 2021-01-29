@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz: Casas de Hogwarts</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>A QUAL CASA DE HOGWARTS VOCÊ PERTENCE?</h1>
+
+        <p class="frase">No seu primeiro ano em Hogwarts, que tipo de aluno você seria?</p>
+        <label class="checkbox">
+            <input type="checkbox" unchecked>Aqule que se juntaria as pessoas mais populares <br>
+            <input type="checkbox" unchecked>Aqule que se juntaria as pessoas que parecem mais inteligentes
+        </label>
+
+        <p class="frase">Por qual motivo você ficaria na detenção em Hogwarts?</p>
+        <label class="checkbox">
+            <input type="checkbox" unchecked>Por bater em um colega para defender um amigo <br>
+            <input type="checkbox" unchecked>Por invadir a Seção Restrita da biblioteca
+        </label>
+
+        <p class="frase">Um trasgo invadiu a escola e entrou em um dos banheiros. Lá estão dois alunos, uma pessoa que você detesta e uma pessoa que você nunca viu na vida. O que você faz?</p>
+        <label class="checkbox">
+            <input type="checkbox" unchecked>Nada, e torce para que o trasgo ensine uma lição no seu rival <br>
+            <input type="checkbox" unchecked>Invade o banheiro sozinho e tenta deter o trasgo com as armas que você tem
+        </label>
+        
+        <p class="frase">Por último, para qual casa de Hogwarts você NÃO gostaria de ser selecionado?</p>
+        <label class="checkbox">
+            <input type="checkbox" >Sonserina <br>
+            <input type="checkbox" >Grifinória <br>
+            <input type="checkbox" >Lufa-Lufa <br>
+            <input type="checkbox" >Corvinal
+        </label>
+
+        <button type="submit" id="btn-pesquisar" class="btn-button">Done</button>
+        
+        <script>
+             const botao = document.querySelector("#btn-pesquisar");
+             botao.addEventListener("click", infosDoEvento => {
+                fetch(`https://www.potterapi.com/v1/sortinghat`)
+                .then(respostaDoServer => {
+                        return respostaDoServer.json();
+                })
+                .then(dados => {
+                    console.log(dados);
+                    alert("Your House is " + dados)
+                })
+            });
+        </script>
+    </body>
+</html>
