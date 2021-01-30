@@ -23,6 +23,6 @@ As Linguagens não estão acopladas em um único arquivo .html. No repositório 
 
 **O arquivo Arquivos.zip contem os arquivos para rodar na sua máquina.**
 
-Após descompactar o Arquivos.zip, abra o arquivo formulario-cep.html. Nesse arquivo já tem um botão "mudar de página", que leva direto para a página da API do Harry Potter. 
+Após descompactar o Arquivos.zip, abra o arquivo 'formulario-cep.html'. Nesse arquivo já tem um botão "mudar de página", que leva direto para a página da API do Harry Potter. 
 
 Um Grande abraço!
