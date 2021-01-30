@@ -1,14 +1,5 @@
 # API de CEP e API do Harry Potter
 
-## Tabela de conteúdos
-=================
-<!--ts-->
-   * [Descrição](#Descricao)
-   * [Pré-requisitos](#pre-requisitos)
-   * [Tecnologias](#tecnologias)
-   * [Observações](#observacoes)
-<!--te-->
-
 ## Descrição
 
 Esse repositório tem como finalidade o estudo de API's. 
