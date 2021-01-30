@@ -1,6 +1,6 @@
 # API de CEP e API do Harry Potter
 
-![Preview-Screens](https://github.com/Henrique2305/Capacitacao-Taking/blob/testing/img1.png.git)
+![Details web](img1.png)
 
 ## Descrição
 
