@@ -2,4 +2,5 @@
 
 ## Descrição
 
-Esses arquivos em HTML tem a finalidade somente de teste das API's.
+Esse repositório tem como finalidade o estudo de API's. 
+A API do ViaCep e do Harry Potter (Essa API, faz um sorting para escolher a casa de Hogwarts).
