@@ -1,5 +1,7 @@
 # API de CEP e API do Harry Potter
 
+![Preview-Screens](https://github.com/Henrique2305/Capacitacao-Taking/blob/testing/img1.png.git)
+
 ## Descrição
 
 Esse repositório tem como finalidade o estudo de API's. 
