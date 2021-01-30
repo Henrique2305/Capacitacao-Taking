@@ -1,6 +1,7 @@
 # API de CEP e API do Harry Potter
 
 ![Details web](img1.png)
+![Details web](img2.png)
 
 ## Descrição
 
