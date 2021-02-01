@@ -45,7 +45,7 @@ $ git clone https://github.com/Henrique2305/Capacitacao-Taking
 # Inicie o Apache
 
 # Abra o navegador e acesse o site
-localhost/Capacitacao-Taking
+localhost/Capacitacao-Taking/formulario-cep.html
 ```
 
 ## Observações
