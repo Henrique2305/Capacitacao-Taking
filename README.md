@@ -50,11 +50,7 @@ localhost/Capacitacao-Taking/formulario-cep.html
 
 ## Observações
 
-As Linguagens não estão acopladas em um único arquivo .html. No repositório tem os  arquivos  
+As Linguagens não estão acopladas em um único arquivo .html. No repositório tem os arquivos  
 .html, .js e .css. No arquivo scriptCEP.js está à chamada para a API do ViaCep. Já no arquivo script.js está à chamada para a API do Harry Potter.
-
-**O arquivo Arquivos.zip contem os arquivos para rodar na sua máquina.**
-
-Após descompactar o Arquivos.zip, abra o arquivo 'formulario-cep.html'. Nesse arquivo já tem um botão "mudar de página", que leva direto para a página da API do Harry Potter. 
 
 Um Grande abraço!
